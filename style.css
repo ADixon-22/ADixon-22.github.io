@@ -80,12 +80,12 @@ h2, h3 {
 }
 
 #portfolio li:hover {
-    background: #eee;
+    background: #000000;
 }
 
 #portfolio a {
     text-decoration: none;
-    color: #454545;
+    color: #ffffff;
 }
 
 /* responsive web design */
