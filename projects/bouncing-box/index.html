@@ -74,9 +74,14 @@
 			turn it around! 
 			*/
 			function update() {
-				positionX = 0 + 10;
+				positionX = positionX + 10;
 				moveBoxTo(positionX);
-				moveBoxTo(speed);
+				if (conditionIsTrue) {
+					speed = -speed;
+				}
+				if (conditionIsTrue) {
+					
+				}
 				
 
 			};
@@ -87,7 +92,7 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				postitonX = 0;
+				positionX = 0;
 				points = points + 1
 				changeBoxText(points);
 				speed = speed + 3 
