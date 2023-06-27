@@ -66,7 +66,7 @@ background.addChild(circle);
                 background.addChild(building);
                 buildings.push(building);
               }
-            
+           
             // TODO 3: Part 1 - Add a tree
             tree = draw.bitmap("img/tree.png");
 tree.x = 500;
@@ -94,8 +94,14 @@ background.addChild(tree);
             }
             
             // TODO 4: Part 2 - Parallax
-            
+            for (var i = 0; i < buildings.length; i++) {
+                var building = buildings[i];
+                building.x = building.x - 1
 
+                if (building.x < -200) {
+                building.x = canvasWidth;
+                }
+            }
         } // end of update function - DO NOT DELETE
         
         
