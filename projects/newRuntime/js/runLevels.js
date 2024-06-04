@@ -85,9 +85,15 @@ enemy.onProjectileCollision = function () {
  createEnemy(400, groundY - 100);
  createEnemy(800, groundY - 100);
 createEnemy(1200, groundY - 50);
-
-function createReward(x, y)
-
+function createReward(x, y){
+var reward = game.createGameItem("reward")
+var yellowCircle = draw.circle(50, 50, "yellow")
+yellowCircle.x = -25
+yellowCircle.y = -25
+reward.addChild(yellowCircle)
+reward.x = 400
+reward.y = groundY - 50
+}
 var marker = game.createGameItem("marker", )
     function startLevel() {
       // TODO 13 goes below here
