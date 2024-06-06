@@ -42,7 +42,10 @@ $(document).ready(function () {
   dataShapes.push(shape)
   // TODO 2: add a new property to all data shapes
   for (let i = 0; i < dataShapes.length; i++){
-    
+    let currentShape = dataShapes.length 
+    if (color === "red"){
+
+    }
   }
 
   // TODO 3-a: add a function that handles the static display type
