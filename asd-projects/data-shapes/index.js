@@ -44,11 +44,11 @@ $(document).ready(function () {
   for (let i = 0; i < dataShapes.length; i++){
     var currentShape = dataShapes[0]
     if (currentShape.color === "red"){
-      currentShape.goodBehavior("bounce")
+      (currentShape.goodBehavior === "bounce")
     } else if (currentShape.color === "blue"){
-      currentShape.goodBehavior("blink")
+      (currentShape.goodBehavior === "blink")
     } else {
-      currentShape.goodBehavior("spin")
+      (currentShape.goodBehavior === "spin")
     }
   }
   
