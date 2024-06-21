@@ -41,14 +41,14 @@ $(document).ready(function () {
   var shape = { color: "blue", shape: "circle", repeat: 3 } 
   dataShapes.push(shape)
   // TODO 2: add a new property to all data shapes
-  for (let i = 0; i < dataShapes.length; i++){
-    var currentShape = dataShapes[0]
-    if (currentShape.color === "red"){
-      (currentShape.goodBehavior === "bounce")
-    } else if (currentShape.color === "blue"){
-      (currentShape.goodBehavior === "blink")
+  for (let i = 0; i < dataShapes.length; i++) {
+    var currentShape = dataShapes[i];
+    if (currentShape.color === "red") {
+      currentShape.goodBehavior = "bounce";
+    } else if (currentShape.color === "blue") {
+      currentShape.goodBehavior = "blink";
     } else {
-      (currentShape.goodBehavior === "spin")
+      currentShape.goodBehavior = "spin";
     }
   }
   
